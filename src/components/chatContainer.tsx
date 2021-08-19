@@ -85,14 +85,18 @@ function ChatContainer() {
         }
     }
 
-    return (
-        <div className="chat-container">
-            <Paper className="message-log">
-                <span className="message">{question}</span>
-                {determineResponseStrategy()}
-            </Paper>
-        </div>
-    );
+    if (question.length > 0) {
+        return (
+            <div className="chat-container">
+                <Paper className="message-log">
+                    <span className="message">{question}</span>
+                    {determineResponseStrategy()}
+                </Paper>
+            </div>      
+        );
+    } else {
+        return (<div>Api conection error</div>);
+    }
 }
 
 export default ChatContainer;
