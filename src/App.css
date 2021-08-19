@@ -2,30 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.message {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chat-container {
+  margin: 15%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chat-header {
+  text-align: start;
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+.option {
+  width: 50%;
+}
+
+.option-container {
+  width: 100%;
+}
+
+.message-log {
+  padding-left:10%;
+  padding-right:10%;
   display: flex;
+  height: 200px;
+  justify-content: space-around;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
