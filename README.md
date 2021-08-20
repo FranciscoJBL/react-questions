@@ -25,5 +25,11 @@ Then, open in your navigator http://localhost:3000. (React should open it for yo
 You can answer the questions made by the api, using the options provided. 
 All your data and preferences will be saved by the api, then you can call (WIP) http://localhost:3000/userid in order to retrieve this information.
 
+### TODO:
+- Styling
+- Show client data page (Using react router?)
+- Create message form (Using react router?)
+- Header should be material one instead of just html
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
