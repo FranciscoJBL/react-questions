@@ -7,12 +7,14 @@
 }
 
 .chat-container {
-  margin: 15%;
+  margin: 10%;
 }
 
 .chat-header {
   text-align: start;
   background-color: darkblue;
+  padding: 1.5%;
+  font-size: large;
   color: aliceblue;
 }
 
