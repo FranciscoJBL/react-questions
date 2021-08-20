@@ -1,16 +1,20 @@
 import openSocket from 'socket.io-client';
-
+/**
+ * open a new socket
+ */
 const socket = openSocket('localhost:3001', {secure: true});
 
+/**
+ * Get the created socket
+ */
 function getSocket() {
     return socket;
 }
-
-function leave(cb: (arg0: any) => void) {
-}
-
+/**
+ * Send a message to the api server.
+ */
 function sendMessage(clientData: object) {
     socket.emit('message', clientData)
 }
 
-export {leave, sendMessage, getSocket}
+export {sendMessage, getSocket}

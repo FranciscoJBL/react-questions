@@ -1,7 +1,7 @@
 function ChatHeader() {
   return (
     <div className="chat-header">
-      Automated Support Chat
+      Automated Questions Chat
     </div>
   );
 }
