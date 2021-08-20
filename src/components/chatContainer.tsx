@@ -17,6 +17,7 @@ function ChatContainer() {
                 setExpectation(ExpectedResponse.End);  
             } else {
                 setQuestion(messageContent.data);
+                setExpectation(messageContent.expects);  
             }
         })
     }, []);
@@ -46,10 +47,9 @@ function ChatContainer() {
         switch (expects) {
             case ExpectedResponse.ACCEPT:
                 return <Button 
-                    className="option"
                     color="primary"
                     onClick={acceptMessage}
-                > 
+                >
                     Accept
                 </Button>;
             case ExpectedResponse.BINARY_QUESTION:
@@ -95,7 +95,7 @@ function ChatContainer() {
             </div>      
         );
     } else {
-        return (<div>Api conection error</div>);
+        return (<div>Connecting...</div>);
     }
 }
 
