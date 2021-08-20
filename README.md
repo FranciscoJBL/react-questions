@@ -30,6 +30,7 @@ All your data and preferences will be saved by the api, then you can call (WIP) 
 - Show client data page (Using react router?)
 - Create message form (Using react router?)
 - Header should be material one instead of just html
+- Docker and coverage
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
