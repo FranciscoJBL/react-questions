@@ -6,17 +6,6 @@
   width: 100%;
 }
 
-.chat-container {
-  margin: 10%;
-}
-
-.chat-header {
-  text-align: start;
-  background-color: darkblue;
-  padding: 1.5%;
-  font-size: large;
-  color: aliceblue;
-}
 
 .option {
   width: 50%;
@@ -27,6 +16,7 @@
 }
 
 .message-log {
+  padding-top: 15%;
   padding-left:10%;
   padding-right:10%;
   display: flex;
